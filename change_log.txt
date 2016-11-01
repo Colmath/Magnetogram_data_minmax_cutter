@@ -1,0 +1,14 @@
+Change log for magneto_minmax_cutter
+
+Version 1.0:
+    - Initial release.
+
+Version 1.1:
+    - Changed invalid (empty) line handling: invalid lines are now counted into processed lines.
+    - Changed error message for invalid lines: the number of the line in which the error occurred is now displayed.
+    - New variable (counter) for valid lines added. The end result of the counter has been added to the log file.
+    - Added a check to see if file can be located: if the specified file cannot be found in the specified location,
+      the program asks again for the filename and location input.
+    - Fixed bug where invalid lines were counted into processed, valid and deleted lines as well, resulting in
+      incorrect numbers in the log files.
+    - Added proper documentation for the code.
